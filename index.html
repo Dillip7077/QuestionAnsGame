@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question ans Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Answer the Following Questions</h1>
+
+    <div id="question-container" class="question-container">
+      <div class="question" id="question"></div>
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type your answer here..."
+      />
+      <button onclick="submitAnswer()">Submit</button>
+    </div>
+
+    <table id="answers-table">
+      <thead>
+        <tr>
+          <th>Question</th>
+          <th>Your Answer</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Answers will be displayed here -->
+      </tbody>
+    </table>
+
+    <div
+      class="button-container"
+      id="clear-button-container"
+      style="display: none"
+    >
+      <button onclick="clearAnswers()">Clear All Answers</button>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
